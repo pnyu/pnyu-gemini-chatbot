@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a203c" />
+  <meta name="description" content="Asisten PNYU Percetakan — konsultasi produk dan pemesanan cetak." />
+  <title>Asisten PNYU | Percetakan Tangerang</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Beranda Asisten PNYU">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text"><strong>P’NYU<span> CETAK</span></strong><small>PERCETAKAN · TANGERANG</small></span>
+      </a>
+      <div class="sidebar-section-label">RUANG KERJA</div>
+      <button class="sidebar-chat" id="sidebar-new-chat" type="button"><span>＋</span> Percakapan baru</button>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section-label">PANDUAN SINGKAT</div>
+      <div class="side-tile"><span class="side-icon">◎</span><div><strong>1. Tulis pesan</strong><small>Ajukan pertanyaan apa pun</small></div></div>
+      <div class="side-tile"><span class="side-icon">↗</span><div><strong>2. Kirim ke API</strong><small>Pesan diproses backend</small></div></div>
+      <div class="side-tile"><span class="side-icon">✧</span><div><strong>3. Terima jawaban</strong><small>Gemini memberikan respons</small></div></div>
+      <div class="sidebar-bottom"><div class="mini-rule"></div><span class="tiny-dot"></span><span>Asisten konsultasi awal · bukan konfirmasi pesanan</span><small>Node.js · Express · Gemini API</small></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar-title"><div class="topbar-icon">✧</div><div><strong>Asisten PNYU</strong><small>Asisten konsultasi produk & pemesanan cetak</small></div></div>
+        <div class="topbar-actions"><span id="connection-status" class="status-pill is-loading"><span class="status-dot"></span>Memeriksa server</span><button id="new-chat" class="outline-button" type="button" title="Hapus riwayat percakapan">↻ <span>Chat baru</span></button></div>
+      </header>
+      <section class="conversation" id="conversation" aria-live="polite" aria-relevant="additions text">
+        <div id="welcome" class="welcome">
+          <div class="welcome-icon">✦</div>
+          <div class="eyebrow">ASISTEN CETAK PNYU</div>
+          <h1>Ada kebutuhan <em>cetak</em> apa hari ini?</h1>
+          <p>Tanyakan produk, bahan, cara pesan, dan kebutuhan cetak Anda. Tim PNYU akan mengonfirmasi harga dan estimasi sebelum produksi.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Saya mau cetak banner untuk acara. Apa yang perlu saya siapkan?" type="button"><span class="suggestion-icon">✳</span><span><strong>Banner & spanduk</strong><small>Kebutuhan cetak acara & usaha</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Bagaimana cara memesan produk lewat website PNYU?" type="button"><span class="suggestion-icon">◈</span><span><strong>Cara pemesanan</strong><small>Dari katalog hingga konfirmasi</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Apakah bisa bantu desain atau cek file cetak?" type="button"><span class="suggestion-icon">⌘</span><span><strong>Bantuan desain & file</strong><small>Konsultasikan sebelum produksi</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Dimana lokasi PNYU Percetakan dan kapan jam layanannya?" type="button"><span class="suggestion-icon">▤</span><span><strong>Alamat & jam layanan</strong><small>Informasi lokasi toko</small></span><span class="suggestion-arrow">↗</span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-label="Riwayat percakapan"></div>
+      </section>
+      <div class="composer-area">
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="user-input">Tulis pesan untuk chatbot</label>
+          <textarea id="user-input" placeholder="Tanyakan kebutuhan cetak Anda..." rows="1" maxlength="3500" autocomplete="off" required></textarea>
+          <button class="send-button" id="send-button" type="submit" aria-label="Kirim pesan" title="Kirim pesan">➤</button>
+        </form>
+        <div class="composer-footer"><span>Tekan <kbd>Enter</kbd> untuk kirim · <kbd>Shift + Enter</kbd> untuk baris baru</span><span>Hindari data sensitif. Harga dan estimasi harus dikonfirmasi tim.</span></div>
+      </div>
+    <div class="quick-links"><a href="https://pnyupercetakan.com/katalog/" target="_blank" rel="noopener noreferrer">Katalog resmi ↗</a><a href="https://pnyupercetakan.com/pemesanan/" target="_blank" rel="noopener noreferrer">Form pemesanan ↗</a><a href="https://wa.me/6281220817037?text=Halo%20PNYU%20Percetakan%2C%20saya%20ingin%20konsultasi%20cetak." target="_blank" rel="noopener noreferrer">Konsultasi WhatsApp ↗</a></div>
+    </main>
+  </div>
+</body>
+</html>

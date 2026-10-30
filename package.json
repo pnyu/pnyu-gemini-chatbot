@@ -1,0 +1,20 @@
+{
+  "name": "pnyu-gemini-chatbot",
+  "version": "1.1.0",
+  "description": "Chatbot PNYU Percetakan - Final Project Hacktiv8 dan widget web siap integrasi",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test",
+    "check": "node --check index.js && node --check src/app.js && node --check src/chatConfig.js && node --check public/script.js && node --check public/widget.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
