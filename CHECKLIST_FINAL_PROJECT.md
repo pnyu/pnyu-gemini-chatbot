@@ -1,34 +1,38 @@
-# Checklist Final Project — Hacktiv8 Sesi 3 Developers
+Checklist Final Project — Chatbot P’NYU Percetakan
+Program: Hacktiv8 — AI Productivity and AI API Integration for Developers, Sesi 3
+Repository: https://github.com/pnyu/pnyu-gemini-chatbot
+A. Aplikasi
+- [x] Antarmuka chatbot dibuat dengan HTML, CSS, dan JavaScript.
+- [x] Backend berjalan menggunakan Node.js dan Express.
+- [x] Endpoint POST /api/chat terhubung dengan Gemini API.
+- [x] System Instruction dan parameter model sudah dikonfigurasi.
+- [x] Tersedia mode demo dan penanganan kesalahan pada antarmuka.
+- [x] Tampilan chatbot sudah diuji melalui browser di localhost:3000.
+B. Pengujian
+- [x] Pemeriksaan sintaks JavaScript berhasil.
+- [x] Pengujian otomatis: 10 lulus, 0 gagal.
+- [x] Pengiriman pesan dalam mode demo berhasil.
+- [x] Respons dari Gemini API asli berhasil ditampilkan.
+- [x] Pengujian pertanyaan tentang banner dilakukan.
+- [x] Pengujian pertanyaan harga dan waktu pengerjaan dilakukan; chatbot tidak membuat kepastian tanpa konfirmasi.
+C. GitHub dan keamanan
+- [x] Repository pnyu-gemini-chatbot dibuat terpisah dari repository website utama.
+- [x] File .gitignore diperiksa sebelum unggah.
+- [x] File .env tidak masuk daftar file yang dilacak Git.
+- [x] Kode proyek berhasil di-commit dan di-push ke branch main.
+- [x] File proyek terlihat di repository GitHub publik.
+- [ ] Periksa ulang perubahan dokumentasi terbaru sebelum di-push.
+D. Pengumpulan Hacktiv8
+- [ ] Simpan screenshot tampilan utama chatbot.
+- [ ] Simpan screenshot pertanyaan dan jawaban Gemini asli.
+- [ ] Masukkan URL repository ke formulir Final Project.
+- [ ] Unggah screenshot sesuai petunjuk formulir.
+- [ ] Simpan bukti pengumpulan setelah formulir berhasil dikirim.
+Form pengumpulan: https://bit.ly/finalproject-developers
 
-## Persyaratan materi
-- [x] Chatbot berbasis web dengan HTML, CSS, dan Vanilla JavaScript.
-- [x] REST API Node.js + Express; endpoint POST `/api/chat`.
-- [x] SDK Gemini (`@google/genai`) + `generateContent()`.
-- [x] Kustomisasi AI: persona PNYU, system instruction dan parameter model.
-- [x] Riwayat percakapan dan feedback UI ketika menunggu respons.
-- [ ] Uji end-to-end menggunakan API key Gemini sendiri.
-- [ ] Screenshot tampilan chatbot dari aplikasi yang berjalan.
-- [ ] Publikasikan kode ke repository GitHub pribadi (rahasia tidak ikut tersimpan).
-- [ ] Submit URL repository GitHub dan screenshot UI ke form tugas.
-
-## Langkah submit
-1. Buat file `.env` dari `.env.example`, tanpa memasukkan file rahasia ke Git.
-2. Jalankan `npm install`, `npm test`, `npm run dev`.
-3. Uji browser dan Postman; ambil screenshot aplikasi.
-4. Buat repository GitHub terpisah untuk proyek tugas (tidak harus menggunakan repository website PNYU).
-5. Jalankan:
-
-```bash
-git init
-git add .
-git commit -m "Final Project Gemini Chatbot - PNYU Percetakan"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git push -u origin main
-```
-
-6. Submit ke form yang tercantum dalam materi Sesi 3: https://bit.ly/finalproject-developers
-
-**Jangan memasukkan API key, password, atau file `.env` ke GitHub.**
-
-**Catatan:** Materi menyebut tenggat H+2 Sesi 3 pukul 23.59 WIB; verifikasi deadline nyata pada kelas.
+Catatan: Materi mencantumkan tenggat H+2 setelah Sesi 3 pukul 23.59 WIB. Periksa jadwal kelas yang berlaku sebelum mengirim tugas.
+E. Setelah tugas dikumpulkan (pengembangan lanjutan, bukan syarat Sesi 3)
+- [ ] Validasi ulang informasi produk dan cara pemesanan P’NYU.
+- [ ] Uji keamanan dan privasi sebelum chatbot dibuka untuk pelanggan.
+- [ ] Siapkan hosting serta pengujian di staging.
+- [ ] Integrasikan widget ke website utama hanya setelah disetujui.
